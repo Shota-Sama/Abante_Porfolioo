@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hobbies.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="../social/social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a class="home-icon">
+            <i class="fas fa-home"></i>
+        </a>
+        <div class="nav-links">
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#hobbies-section"><i class="fas fa-heart"></i> Hobbies</a>
+            <a href="#skills-section"><i class="fas fa-laptop-code"></i> Skills</a>
+            <a href="#gallery-section"><i class="fas fa-images"></i> Gallery</a>
+            <a href="#social-section"><i class="fas fa-share-nodes"></i> Social</a>
+        </div>
+    </nav>
+
+    <main id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="greeting">Hello, I am</h2>
+            <h1 class="name">Shan Aaron C. Abante</h1>
+            <p class="title">A 2nd Year Student of Columban College</p>
+            <p class="description">
+                I Love to play Games and to Code :)
+            </p>
+            <a href="#hobbies-section" class="cta-button">
+                <i class="fas fa-eye"></i> View My Hobbies
+            </a>
+        </div>
+        <div class="hero-image">
+            <img src="/image/shan.png" alt="Profile Picture" class="profile-image">
+        </div>
+    </main>
+
+    <section id="hobbies-section">
+        <div class="hobbies-container">
+            <div class="hobby-card">
+                <div class="media-wrapper" onclick="openModal(this)">
+                    <img src="/image/manga.jpg" alt="Reading Manga" class="hobby-image">
+                </div>
+                <h3>Reading Manga</h3>
+                <p>Explore the world of manga with captivating stories and art.</p>
+            </div>
+            <div class="hobby-card">
+                <div class="media-wrapper" onclick="openModal(this)">
+                    <video class="hobby-image" autoplay loop muted playsinline>
+                        <source src="/image/anime.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>Watching Anime</h3>
+                <p>Dive into exciting anime series and movies.</p>
+            </div>
+            <div class="hobby-card">
+                <div class="media-wrapper" onclick="openModal(this)">
+                    <img src="/image/gaming.jpg" alt="Gaming" class="hobby-image">
+                </div>
+                <h3>Gaming</h3>
+                <p>Engage in thrilling gaming adventures across various platforms.</p>
+            </div>
+            <div class="hobby-card">
+                <div class="media-wrapper" onclick="openModal(this)">
+                    <img src="/image/music.jpg" alt="Reading" class="hobby-image">
+                </div>
+                <h3>Music</h3>
+                <p>i like music</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h3>Java</h3>
+                <div class="skill-level">
+                    <div class="progress-bar" style="width: 75%"></div>
+                </div>
+                <p class="skill-description">
+                    Java is a popular programming language.
+
+                    Java is used to develop mobile apps, web apps, desktop apps, games and much more.                    
+                </p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML</h3>
+                <div class="skill-level">
+                    <div class="progress-bar" style="width: 85%"></div>
+                </div>
+                <p class="skill-description">
+                    HTML is the standard markup language for Web pages.
+With HTML you can create your own Website.
+                </p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>CSS</h3>
+                <div class="skill-level">
+                    <div class="progress-bar" style="width: 80%"></div>
+                </div>
+                <p class="skill-description">
+                    CSS is the language we use to style an HTML document.
+
+CSS describes how HTML elements should be displayed.
+                </p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                    <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <p class="skill-description">
+                    JavaScript is the world's most popular programming language.
+
+JavaScript is the programming language of the Web.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery-section">
+        <h2 class="section-title">My Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="/image/image1.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="/image/image2.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="/image/image3.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="/image/image4.jpg" alt="Gallery Image 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="social-section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-form">
+            <form id="homeMessageForm">
+                <div class="form-group">
+                    <input type="email" id="homeEmail" name="email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="homeMessage" name="message" required placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61551690304681" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/maxyosh1" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/shota_sama_/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
